@@ -1,3 +1,61 @@
-<html>
-<h1> Module 12!</h1>
-</htm>
+<!DOCTYPE html>
+<html lang="en">
+  <!-- body style="background-color:rgb(65, 157, 194);"-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+   
+    rel ="stylesheet" 
+    href="style.css">
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" style="background-color:rgb(65, 157, 194);" >
+        <h1 style = "background-color: rgb(255, 136, 0);"> Belly Button Biodiversity Dashboard</h1>
+        <p> <i> <b> Use the interactive charts below to explore the dataset </b> </i> </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well" style="background-color:rgb(175, 194, 65);">
+          <h5><b> Test Subject ID No.:</b></h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title"> <b> Demographic Info </b> </h3>
+          </div>
+          <div id="sample-metadata" class="panel-body" style="background-color:rgb(175, 194, 65);"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src = "charts.js"></script>
+  
+ 
+</body>
+
+</html>
